@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  color: rgb(80, 80, 80);
+  font-family: Arial;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+header {
+  border-bottom: 1px solid gray;
+}
+
+main {
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: black;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+h2 {
+  display: inline-block;
+  font-style: italic;
+}
+
+input {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+}
+
+a {
+  color: rgb(120, 120, 120);
+}
+
+#years {
+  width: 100%;
+}
+
+.year {
+  font-size: 0.8em;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.year div {
+  flex-grow: 1;
+  height: 0.8em;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.index {
+  color: rgb(150, 150, 150);
+  font-size: 0.9em;
+  padding-right: 0.5em;
+  text-align: right;
+  width: 2em;
+}
+
+.week {
+  background-color: rgb(210, 210, 210);
+  /*border: 1px solid rgb(150, 150, 150);*/
+  border-radius: 0.25em;
+}
+
+.spent {
+  background-color: rgb(150, 180, 220);
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  body {
+    width: 40em;
+    padding: 2em 2em;
+  }
+}
