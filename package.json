@@ -1,0 +1,23 @@
+{
+  "name": "life-is-short",
+  "version": "1.0.0",
+  "description": "Just a little reminder of how much time of your life you've already wasted 😉.",
+  "main": "source/main.js",
+  "scripts": {
+    "copy-files": "cp -r source/images docs/",
+    "build-css": "cleancss -o docs/styles/screen.css source/styles/screen.css",
+    "build-html": "html-minifier --collapse-whitespace --remove-attribute-quotes --output docs/index.html source/index.html",
+    "build": "rollup -c & npm run copy-files & npm run build-css & npm run build-html",
+    "prepublish": "npm run build"
+  },
+  "author": "Adrian Sieber",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "clean-css": "^3.4.19",
+    "html-minifier": "^3.0.2",
+    "rollup": "^0.34.10",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-uglify": "^1.0.1"
+  }
+}

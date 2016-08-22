@@ -1,4 +1,3 @@
-const birthdayInput = document.getElementById('birthday')
 const yearsContainer = document.getElementById('years')
 const yearsInALife = 90
 const weeksPerYear = 52
@@ -65,8 +64,7 @@ function renderWeeks (options) {
   }
 }
 
-function renderSpentWeeks () {
-  const birthday = new Date(birthdayInput.value)
+export default function renderSpentWeeks (birthday) {
   const now = new Date()
   const daysPerWeek = 7
   const hoursPerDay = 24
@@ -77,7 +75,3 @@ function renderSpentWeeks () {
 
   renderWeeks({spentWeeks: ageInWeeks})
 }
-
-birthdayInput.addEventListener('input', renderSpentWeeks)
-
-renderSpentWeeks()

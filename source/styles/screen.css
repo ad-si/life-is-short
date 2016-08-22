@@ -33,6 +33,10 @@ h2 {
   font-style: italic;
 }
 
+label {
+  margin-right: 0.5em;
+}
+
 input {
   margin-bottom: 2em;
   font-size: 1.2em;
