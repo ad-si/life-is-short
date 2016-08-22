@@ -2,7 +2,7 @@
 
 Just a little reminder of how much time of your life you've already wasted 😉.
 
-![Screenshot](./images/screenshot.png)
+![Screenshot](./docs/images/screenshot.png)
 
 
 ## TODO
