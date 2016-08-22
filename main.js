@@ -2,11 +2,44 @@ const birthdayInput = document.getElementById('birthday')
 const yearsContainer = document.getElementById('years')
 const yearsInALife = 90
 const weeksPerYear = 52
+const milestones = [
+  {
+    title: 'Early Years',
+    from: 0,
+  },
+  {
+    title: 'School',
+    from: 6,
+  },
+  {
+    title: 'University',
+    from: 18,
+  },
+  {
+    title: 'Career',
+    from: 23,
+  },
+  {
+    title: 'Retirement',
+    from: 67,
+  },
+]
 
 function renderWeeks (options) {
   yearsContainer.innerHTML = ''
 
-  for (let year = 1; year <= yearsInALife; year++) {
+  for (let year = 0; year < yearsInALife; year++) {
+
+    const currentMilestone = milestones
+      .find(milestone => milestone.from === year)
+
+    if (currentMilestone) {
+      const milestoneElement = document.createElement('div')
+      milestoneElement.classList.add('milestone')
+      milestoneElement.textContent = currentMilestone.title
+      yearsContainer.appendChild(milestoneElement)
+    }
+
     const yearElement = document.createElement('div')
     yearElement.classList.add('year')
 
@@ -18,7 +51,7 @@ function renderWeeks (options) {
     yearsContainer.appendChild(yearElement)
 
     for (let week = 1; week <= weeksPerYear; week++) {
-      const weekNumber = ((year - 1) * weeksPerYear) + week
+      const weekNumber = (year * weeksPerYear) + week
       const weekElement = document.createElement('div')
 
       weekElement.classList.add('week')

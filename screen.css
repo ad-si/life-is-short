@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(240, 240, 240);
   color: rgb(80, 80, 80);
   font-family: Arial;
   margin: 0 auto;
@@ -54,6 +54,12 @@ a {
   width: 100%;
 }
 
+.milestone {
+  text-align: center;
+  color: rgb(150, 150, 150);
+  font-size: 0.8em;
+}
+
 .year div {
   flex-grow: 1;
   height: 0.8em;
@@ -71,8 +77,7 @@ a {
 
 .week {
   background-color: rgb(210, 210, 210);
-  /*border: 1px solid rgb(150, 150, 150);*/
-  border-radius: 0.25em;
+  border-radius: 1px;
 }
 
 .spent {
