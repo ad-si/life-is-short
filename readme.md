@@ -2,7 +2,7 @@
 
 Just a little reminder of how much time of your life you've already wasted 😉.
 
-![Screenshot](screenshot.png)
+![Screenshot](./images/screenshot.png)
 
 
 ## TODO
