@@ -1,9 +1,11 @@
 import babel from 'rollup-plugin-babel'
-import uglify from 'rollup-plugin-uglify'
+import {uglify} from 'rollup-plugin-uglify'
 
 export default {
-  entry: 'source/scripts/main.js',
-  format: 'cjs',
+  input: 'source/scripts/main.js',
+  output: {
+    file: 'docs/scripts/bundle.js',
+    format: 'cjs',
+  },
   plugins: [babel(), uglify()],
-  dest: 'docs/scripts/bundle.js',
 }
