@@ -2,20 +2,25 @@
   box-sizing: border-box;
 }
 
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 html {
   background-color: white;
 }
 
-body {
+.content {
   background-color: rgb(240, 240, 240);
   color: rgb(80, 80, 80);
-  font-family: Arial;
   margin: 0 auto;
   padding: 1em 1em;
 }
 
 header {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #c3c3c3;
 }
 
 main {
@@ -37,13 +42,37 @@ label {
   margin-right: 0.5em;
 }
 
-input {
+.input-wrap{
   margin-bottom: 2em;
+}
+
+input {
   font-size: 1.2em;
 }
 
 a {
   color: rgb(120, 120, 120);
+}
+
+.chart{
+  position: relative;
+}
+
+.x-axis-label, .y-axis-label{
+  position: absolute;
+  font-size: 0.7em;
+  color: rgb(150, 150, 150);
+}
+
+.x-axis-label{
+  left: 27px;
+  top: 2px;
+}
+
+.y-axis-label{
+  left: -30px;
+  top: 49px;
+  transform: rotate(-90deg);
 }
 
 #years {
@@ -59,9 +88,11 @@ a {
 }
 
 .milestone {
-  text-align: center;
-  color: rgb(150, 150, 150);
+  text-align: right;
   font-size: 0.8em;
+  margin-bottom: 3px;
+  margin-top: 6px;
+  padding-left: 2.5em;
 }
 
 .year div {
@@ -82,19 +113,76 @@ a {
 .week {
   background-color: rgb(210, 210, 210);
   border-radius: 1px;
+  -webkit-print-color-adjust: exact;
 }
 
 .spent {
   background-color: rgb(150, 180, 220);
+  -webkit-print-color-adjust: exact;
 }
 
 footer {
   text-align: center;
 }
 
-@media (min-width: 40em) {
-  body {
-    width: 40em;
+@media (min-width: 40em){
+  .content {
+    width: 46em;
     padding: 2em 2em;
+  }
+  .milestone{
+    text-align: center;
+  }
+  .x-axis-label, .y-axis-label{
+    font-size: 0.8em;
+  }
+  .x-axis-label{
+    left: 33px;
+    top: -3px;
+  }
+}
+
+@media print{
+  h2, .desc, .input-wrap label{
+    display: none;
+  }
+  .content{
+    background: #fff;
+    width: 960px;
+    padding: 0;
+  }
+  main{
+    width: 800px;
+    margin: 0 auto;
+  }
+  .input-wrap{
+    text-align: center;
+    margin-top: -23px;
+  }
+  input{
+    border: none;
+    position: relative;
+    left: 75px;
+    width: 200px;
+    display: inline-block;
+    font-size: 1em;
+  }
+  header{
+    text-align: center;
+    padding-left: 2.5em;
+  }
+  h1{
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .milestone{
+    text-align: center;
+  }
+  .x-axis-label, .y-axis-label{
+    font-size: 0.8em;
+  }
+  .x-axis-label{
+    left: 33px;
+    top: -3px;
   }
 }
