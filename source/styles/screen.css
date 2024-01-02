@@ -9,7 +9,7 @@ html {
 body {
   background-color: rgb(240, 240, 240);
   color: rgb(80, 80, 80);
-  font-family: Arial;
+  font-family: sans-serif;
   margin: 0 auto;
   padding: 1em 1em;
 }
@@ -46,8 +46,35 @@ a {
   color: rgb(120, 120, 120);
 }
 
+#input-wrapper {
+  padding: 1em 0;
+  text-align: center;
+}
+
+#chart{
+  position: relative;
+}
+
+#x-axis-label, #y-axis-label{
+  position: absolute;
+  font-size: 0.7em;
+  color: rgb(150, 150, 150);
+}
+
+#x-axis-label {
+  left: 3em;
+  top: -1em;
+}
+
+#y-axis-label{
+  left: -3em;
+  top: 5em;
+  transform: rotate(-90deg);
+}
+
 #years {
   width: 100%;
+  margin-top: 1em;
 }
 
 .year {
@@ -62,6 +89,7 @@ a {
   text-align: center;
   color: rgb(150, 150, 150);
   font-size: 0.8em;
+  padding: 0.2em 0;
 }
 
 .year div {
@@ -96,5 +124,68 @@ footer {
   body {
     width: 40em;
     padding: 2em 2em;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: none;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2, #desc, #input-wrapper label {
+    display: none;
+  }
+
+  #input-wrapper {
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+
+  input {
+    border: none;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  #x-axis-label, #y-axis-label  {
+    font-size: 0.8em;
+  }
+
+  .year {
+    font-size: 0.58em;
+  }
+
+  .week {
+    background-color: transparent;
+    border: 1px solid rgb(210, 210, 210);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .spent {
+    background-color: transparent;
+    border: 1px solid rgb(150, 180, 220);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  footer {
+    display: none;
   }
 }
