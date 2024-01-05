@@ -14,6 +14,7 @@ Just a little reminder of how much time of your life you've already wasted 😉.
 
 ## Related
 
+- [Lifechart](https://infertux.com/labs/lifechart/)
 - [imgur.com/67aHKhF](https://imgur.com/67aHKhF)
 - [waitbutwhy.com/2014/05/life-weeks.html](
     https://waitbutwhy.com/2014/05/life-weeks.html)
