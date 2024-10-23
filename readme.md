@@ -20,3 +20,6 @@ Just a little reminder of how much time of your life you've already wasted 😉.
     https://waitbutwhy.com/2014/05/life-weeks.html)
 - [github.com/hychen/lifeistooshort-chrome-extension](
     https://github.com/hychen/lifeistooshort-chrome-extension)
+- [Live-A-Little] - E-ink life progress bar.
+
+[Live-A-Little]: https://hackaday.io/project/180219-live-a-little
