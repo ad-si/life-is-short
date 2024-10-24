@@ -21,5 +21,7 @@ Just a little reminder of how much time of your life you've already wasted 😉.
 - [github.com/hychen/lifeistooshort-chrome-extension](
     https://github.com/hychen/lifeistooshort-chrome-extension)
 - [Live-A-Little] - E-ink life progress bar.
+- [Habit Calendar] - Customizable and printable habit tracker.
 
+[Habit Calendar]: https://habitcalendar.co/
 [Live-A-Little]: https://hackaday.io/project/180219-live-a-little
