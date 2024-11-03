@@ -22,6 +22,8 @@ Just a little reminder of how much time of your life you've already wasted 😉.
     https://github.com/hychen/lifeistooshort-chrome-extension)
 - [Live-A-Little] - E-ink life progress bar.
 - [Habit Calendar] - Customizable and printable habit tracker.
+- [LifeTime] - LED display showing months lived in a 90 year lifetime.
 
 [Habit Calendar]: https://habitcalendar.co/
+[LifeTime]: https://blog.adafruit.com/2024/11/01/lifetime-displays-months-lived-in-a-90-year-lifetime/
 [Live-A-Little]: https://hackaday.io/project/180219-live-a-little
