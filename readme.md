@@ -25,5 +25,5 @@ Just a little reminder of how much time of your life you've already wasted 😉.
 - [LifeTime] - LED display showing months lived in a 90 year lifetime.
 
 [Habit Calendar]: https://habitcalendar.co/
-[LifeTime]: https://blog.adafruit.com/2024/11/01/lifetime-displays-months-lived-in-a-90-year-lifetime/
+[LifeTime]: https://www.instructables.com/LifeTime/
 [Live-A-Little]: https://hackaday.io/project/180219-live-a-little
