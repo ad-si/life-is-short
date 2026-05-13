@@ -15,7 +15,9 @@ Just a little reminder of how much time of your life you've already wasted 😉.
 ## Related
 
 - [Habit Calendar] - Customizable and printable habit tracker.
+- [Life is Short FYI]
 - [Life Is Too Short Chrome Extension]
+- [Life Left] - Visualize how much of your life may still remain.
 - [Lifechart] - Web app to visualize your life in weeks.
 - [LifeTime] - LED display showing months lived in a 90 year lifetime.
 - [Live-A-Little] - E-ink life progress bar.
@@ -25,7 +27,9 @@ Just a little reminder of how much time of your life you've already wasted 😉.
 - [Your Life in Weeks] - Create a map of your life with each week as a little box.
 
 [Habit Calendar]: https://habitcalendar.co/
+[Life is Short FYI]: https://www.lifeisshort.fyi/calendar
 [Life Is Too Short Chrome Extension]: https://github.com/hychen/lifeistooshort-chrome-extension
+[Life Left]: https://binovarghese.com/projects/apps/life-left/
 [Lifechart]: https://infertux.com/labs/lifechart/
 [LifeTime]: https://www.instructables.com/LifeTime/
 [Live-A-Little]: https://hackaday.io/project/180219-live-a-little
@@ -33,3 +37,4 @@ Just a little reminder of how much time of your life you've already wasted 😉.
 [Spend Your Time Wisely]: https://imgur.com/67aHKhF
 [Wait But Why - Your Life in Weeks]: https://waitbutwhy.com/2014/05/life-weeks.html
 [Your Life in Weeks]: https://lifeweeks.app/
+https://depressingcalculators.com/
